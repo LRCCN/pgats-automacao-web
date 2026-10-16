@@ -1,0 +1,23 @@
+{
+  "usuarioValido": {
+    "nome": "luiz-qa",
+    "senha": "12345",
+    "primeiroNome": "Luiz",
+    "ultimoNome": "QA",
+    "empresa": "PGATS",
+    "endereco": "Rua dos Testes, 123",
+    "complemento": "Apto 47",
+    "pais": "India",
+    "estado": "AM",
+    "cidade": "Manaus",
+    "cep": "01000-000",
+    "celular": "92999999999",
+    "dia": "15",
+    "mes": "12",
+    "ano": "1993"
+  },
+  "usuarioInexistente": {
+    "email": "email-inexistente@teste.com",
+    "senha": "senha-errada"
+  }
+}
