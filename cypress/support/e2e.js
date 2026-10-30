@@ -16,6 +16,13 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+import 'cypress-mochawesome-reporter/register'
+
+// Bloqueia anúncios do site (vignette/iframes) que cobrem elementos e quebram cliques
+beforeEach(() => {
+  cy.intercept({ url: /googlesyndication|doubleclick|googleadservices|adsbygoogle/ }, { statusCode: 204, body: '' })
+})
+
 // Habilita o comando cy.xpath() (exercício de comparação CSS x XPath)
 require('cypress-xpath')
 

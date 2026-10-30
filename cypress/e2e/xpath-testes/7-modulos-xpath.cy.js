@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 
-const cadastro = require('../modules/cadastro/cadastro');
-const login = require('../modules/login/login');
-const logout = require('../modules/logout/logout');
-const conta = require('../modules/conta/conta');
-const usuarios = require('../fixtures/usuarios.json');
+const cadastro = require('../../modules-xpath/cadastro/cadastro');
+const login = require('../../modules-xpath/login/login');
+const logout = require('../../modules-xpath/logout/logout');
+const conta = require('../../modules-xpath/conta/conta');
+const usuarios = require('../../fixtures/usuarios.json');
 
-describe('Automation Exercise - Test Cases 1 a 5 (modularizado)', () => {
+describe('Automation Exercise - Test Cases 1 a 5 (modularizado, XPath)', () => {
   let usuario;
 
   // e-mail único por teste, evitando "Email Address already exist!"
